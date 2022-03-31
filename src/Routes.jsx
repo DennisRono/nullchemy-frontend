@@ -1,24 +1,22 @@
 import React from 'react'
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './Routes/Home'
 import About from './Routes/About'
 import Services from './Routes/Services'
 import Contact from './Routes/Contact'
+import NotFound from './Routes/NotFound'
 
 const Pathways = () => {
   return (
-    <BrowserRouter>
+    <Router>
         <Routes>
-            <Route paath="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
         </Routes>
-    </BrowserRouter>
+      </Router>
   )
 }
 
