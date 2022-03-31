@@ -1,10 +1,10 @@
 import React from 'react'
-import Pathways from './Routes'
+import Routes from './Routes'
 
 const App = () => {
   return (
     <div>
-      <Pathways />
+      <Routes />
     </div>
   )
 }
