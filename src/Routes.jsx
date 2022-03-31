@@ -7,6 +7,7 @@ import {
 import Home from './Routes/Home'
 import About from './Routes/About'
 import Services from './Routes/Services'
+import Contact from './Routes/Contact'
 
 const Routes = () => {
   return (
