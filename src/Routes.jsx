@@ -9,7 +9,7 @@ import About from './Routes/About'
 import Services from './Routes/Services'
 import Contact from './Routes/Contact'
 
-const Routes = () => {
+const Pathways = () => {
   return (
     <BrowserRouter>
         <Routes>
@@ -22,4 +22,4 @@ const Routes = () => {
   )
 }
 
-export default Routes
+export default Pathways
