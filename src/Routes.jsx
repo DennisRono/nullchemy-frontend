@@ -13,14 +13,11 @@ const Routes = () => {
   return (
     <BrowserRouter>
         <Routes>
-        <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />}>
-            <Route path="services" element={<Services />}>
-            </Route>
-        </Route>
+            <Route paath="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="services" element={<Services />} />
         </Routes>
-    </BrowserRouter>,
+    </BrowserRouter>
   )
 }
 
